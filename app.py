@@ -24,6 +24,6 @@ for row in column_daata[1:]:
     length = len(df)
     df.loc[length] = individual_raw_data
 
-df.to_csv(r"C:\learn sth new\Projects-Languages\Django\MarketPrices14.csv", index=False)
+df.to_csv(os.getenv("STORE_PATH"), index=False)
 
 
